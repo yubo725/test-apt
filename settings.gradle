@@ -1,0 +1,4 @@
+rootProject.name = "TestAPT"
+include ':app'
+include ':annotation'
+include ':processor'
