@@ -4,12 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.annotation.MyAnnotation;
-import com.example.annotation.NeedLogin;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         textView.setOnClickListener(v -> toOtherActivity());
     }
 
-    @NeedLogin
     public void toOtherActivity() {
         startActivity(new Intent(MainActivity.this, OtherActivity.class));
     }
